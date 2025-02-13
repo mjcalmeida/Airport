@@ -18,6 +18,7 @@ builder.Services.AddHttpClient("AeroportoAPI", c =>
 builder.Services.AddScoped<IVooService, VooService>();
 builder.Services.AddScoped<ICidadeService, CidadeService>();
 builder.Services.AddScoped<ICiaAereaService, CiaAereaService>();
+builder.Services.AddScoped<IAgendaService, AgendaService>();
 
 var app = builder.Build();
 

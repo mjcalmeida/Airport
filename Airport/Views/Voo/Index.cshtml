@@ -23,7 +23,10 @@
                     @Html.DisplayNameFor(model => model.Numero)
                 </th>
                 <th>
-                    @Html.DisplayNameFor(model => model.Horario)
+                    @Html.DisplayNameFor(model => model.Cidade)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cia)
                 </th>
                 <th></th>
             </tr>
@@ -36,7 +39,10 @@
                         @Html.DisplayFor(modelItem => item.Numero)
                     </td>
                     <td>
-                        @Html.DisplayFor(modelItem => item.Horario)
+                        @Html.DisplayFor(modelItem => item.Cidade)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Cia)
                     </td>
                     <td>
                         <a asp-action="AtualizarVoo" asp-route-id="@item.VooId" title="Editar" class="btn btn-warning">
